@@ -1,0 +1,125 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c5b887ff;
+    font-weight: bold; /* Esto pone el texto en negrita */ 
+    /* Imagen de fondo */
+    background-image: url('los santos.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover; /* Hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen se queda fija mientras se hace scroll */
+    min-height: 90vh; /* Asegura que la imagen cubra toda la altura de la página */
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(187, 178, 144);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo-left,
+header .logo-right {
+    opacity: 0.35;
+    position: absolute; /* Fija los logos en posiciones específicas */
+    top: 45px; /* Distancia desde la parte superior */
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene las proporciones del logo */
+    z-index: 10; /* Asegura que los logos se muestren sobre otros elementos */
+}
+
+header .logo-left {
+    left: 180px; /* Coloca el primer logo a la izquierda */
+}
+
+header .logo-right {
+    right: 180px; /* Coloca el segundo logo a la derecha */
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 70px; /* Añadimos margen superior para evitar que el título se superponga al logo */
+}
+
+.rangos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rango {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+input {
+    width: 94%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    width: 35%; /* Reducir el ancho */
+    padding: 6px 12px; /* Reducir el padding */
+    background-color: #e74c3c; /* Color de fondo rojo */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de texto más pequeño */
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+

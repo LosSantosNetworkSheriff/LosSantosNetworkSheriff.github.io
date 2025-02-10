@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangos de Sheriff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagen.png" alt="Logo" class="logo-left">
+            <h1>Rangos de Sheriff</h1>
+            <img src="imagen.png" alt="Logo" class="logo-right">
+        </header>
+        
+        <div class="rangos">
+            <!-- Repetimos para cada rango de sheriff -->
+            <div class="rango">
+                <h2>Sheriff</h2>
+                <ul id="sheriffList">
+                    <!-- Nombres asignados a este rango aparecerán aquí -->
+                </ul>
+                <input type="text" id="sheriffInput" placeholder="Ingrese nombre para Sheriff" />
+                <button onclick="addPerson('sheriff')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Undersheriff</h2>
+                <ul id="undersheriffList"></ul>
+                <input type="text" id="undersheriffInput" placeholder="Ingrese nombre para Undersheriff" />
+                <button onclick="addPerson('undersheriff')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Captain</h2>
+                <ul id="captainList"></ul>
+                <input type="text" id="captainInput" placeholder="Ingrese nombre para Captain" />
+                <button onclick="addPerson('captain')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Teniente</h2>
+                <ul id="tenienteList"></ul>
+                <input type="text" id="tenienteInput" placeholder="Ingrese nombre para Teniente" />
+                <button onclick="addPerson('teniente')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Sergeant</h2>
+                <ul id="sergeantList"></ul>
+                <input type="text" id="sergeantInput" placeholder="Ingrese nombre para Sergeant" />
+                <button onclick="addPerson('sergeant')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Senior Deputy Sheriff</h2>
+                <ul id="seniorDeputySheriffList"></ul>
+                <input type="text" id="seniorDeputySheriffInput" placeholder="Ingrese nombre para Senior Deputy Sheriff" />
+                <button onclick="addPerson('seniorDeputySheriff')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Park Ranger</h2>
+                <ul id="parkRangerList"></ul>
+                <input type="text" id="parkRangerInput" placeholder="Ingrese nombre para Park Ranger" />
+                <button onclick="addPerson('parkRanger')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Deputy Sheriff</h2>
+                <ul id="deputySheriffList"></ul>
+                <input type="text" id="deputySheriffInput" placeholder="Ingrese nombre para Deputy Sheriff" />
+                <button onclick="addPerson('deputySheriff')">Agregar</button>
+            </div>
+
+            <div class="rango">
+                <h2>Deputy Sheriff Trainee (NO INSIGNIA)</h2>
+                <ul id="deputySheriffTraineeList"></ul>
+                <input type="text" id="deputySheriffTraineeInput" placeholder="Ingrese nombre para Deputy Sheriff Trainee (NO INSIGNIA)" />
+                <button onclick="addPerson('deputySheriffTrainee')">Agregar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
