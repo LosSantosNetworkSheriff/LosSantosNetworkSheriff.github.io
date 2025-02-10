@@ -9,7 +9,7 @@ function addPerson(rank) {
     }
 
     // Hacer un fetch al servidor para agregar el nombre al archivo
-    fetch(`https://lossantosnetworksheriff.github.io/add-name/${rank}`, {  // Ruta actualizada
+    fetch(`http://localhost:3000/add-name/${rank}`, {  // Ruta actualizada
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ function updateRankList(rank) {
     const rankList = document.getElementById(`${rank}List`);
 
     // Hacer un fetch al servidor para obtener los jugadores de un rango
-    fetch(`https://lossantosnetworksheriff.github.io/get-names/${rank}`)  // Ruta actualizada
+    fetch(`http://localhost:3000/get-names/${rank}`)  // Ruta actualizada
         .then(response => {
             if (!response.ok) {
                 return;
@@ -77,7 +77,7 @@ function updateRankList(rank) {
 
 // Función para eliminar un jugador de un rango
 function removePlayer(rank, name, listItem) {
-    fetch(`https://lossantosnetworksheriff.github.io/remove-name/${rank}`, {  // Ruta actualizada
+    fetch(`http://localhost:3000/remove-name/${rank}`, {  // Ruta actualizada
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
